@@ -33,12 +33,11 @@ const triviaQuestion = [
 ];
 console.log(triviaQuestion);
 
-// Create function that presents the questions to users
-function presenttriviaQuestion(question) {
+// Create function that displays the questions 
+function displayQuestion(question) {
     console.log(question);
-}
-function displaytriviaQuestion(options) {
+};
+function displayOptions(options) {
     console.log(options);
-}
+};
 
-displaytriviaQuestion 
