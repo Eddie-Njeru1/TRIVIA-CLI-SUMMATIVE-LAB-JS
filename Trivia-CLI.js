@@ -30,8 +30,8 @@ const triviaQuestion = [
         answer: "B"
     }
   
-
 ];
+console.log(triviaQuestion);
 
 // Create function that presents the questions to users
 function presenttriviaQuestion(question) {
@@ -41,4 +41,4 @@ function displaytriviaQuestion(options) {
     console.log(options);
 }
 
-
+displaytriviaQuestion 
