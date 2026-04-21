@@ -1,3 +1,11 @@
+// Create readline to enable user interactivity 
+const readline = require("readline");
+
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+})
+
 // Create the Array of Trivia Questions
 const triviaQuestion = [
     { 
@@ -33,11 +41,17 @@ const triviaQuestion = [
 ];
 console.log(triviaQuestion);
 
-// Create function that displays the questions 
-function displayQuestion(question) {
-    console.log(question);
-};
+// Create a variable to track the correct answers scores
+let score = 0
+
+// Create functions that display the questions and options 
+function displayQuestion(question, index) {
+    console.log("\nQuestion " + (index + 1) + ": " + question)
+}
+
 function displayOptions(options) {
-    console.log(options);
-};
+    options.forEach(function(option) {
+        console.log("  " + option)
+    })
+}
 
