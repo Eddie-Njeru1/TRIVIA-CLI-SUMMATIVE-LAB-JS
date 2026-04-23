@@ -46,7 +46,7 @@ let score = 0
 
 // Create functions that display the questions and options 
 function displayQuestion(question, index) {
-    console.log("n\question " + (index + 1) + ": " + question)
+    console.log("\nQuestion " + (index + 1) + ": " + question)
 }
 
 function displayOptions(options) {
@@ -55,13 +55,13 @@ function displayOptions(options) {
     })
 }
 // Create function to start a timer for each question 
-function startTimer(timeLeft) {
+function startTimer(Timer) {
     let timeLeft = 15
     process.stdout.write("\n Time left: " + timeLeft)
 }
 
 // Create function to ask questions one at a time
-function askQuestion(index + 1) {
+function askQuestion(i) {
     if (i>= triviaQuestion.length) {
         showFinalScore()
     }
